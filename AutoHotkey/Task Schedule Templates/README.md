@@ -1,1 +1,1 @@
-Task Schedule XML templates. Change the user when importing
+Task Schedule XML templates. Remember to change the user when importing
