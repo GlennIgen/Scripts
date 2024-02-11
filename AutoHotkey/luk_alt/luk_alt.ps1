@@ -1,0 +1,43 @@
+﻿$programs = @(
+"discord"
+"faceit"
+"faceitclient"
+"faceitservice"
+"steam"
+"upc"
+"epicgameslauncher"
+"eabackgroundservice"
+"battle.net"
+"Launcher"
+"LauncherPatcher"
+"SocialClubHelper"
+"RockstarService"
+"RockstarErrorHandler"
+"spotify"
+"opera"
+"flameshot"
+"steelseriesgg"
+"steelseriesengine"
+"outlook"
+"onedrive"
+"sublime_text"
+"1password"
+"nvidia broadcast ui"
+"nvidia broadcast"
+"ShurePlus MOTIV"
+"icue"
+"powertoys"
+"focusrite notifier"
+"ifiusbaudiocpl"
+"tailscaled"
+"tailscale-ipn"
+"taskmgr"
+"notepad"
+"powershell_ise"
+"wireguard"
+)
+
+foreach ($program in $programs){
+Get-Process $program | Stop-Process -Force -ErrorAction SilentlyContinue
+Start-Sleep -Milliseconds 50
+}
